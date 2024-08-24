@@ -7,7 +7,7 @@ export default defineConfig({
             input: {
                 main: resolve(__dirname, "index.html"),
                 news: resolve(__filename, "news.html"),
-            }
-        }
-    }
-})
+            },
+        },
+    },
+});
