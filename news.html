@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="darkmood">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./images/tickerAI-logo 1.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>TickerAI</title>
+  </head>
+  <body class="bg-white dark:bg-gray-800">
+    <!-- // Header Start \\ -->
+
+    <header class="md:px-14 md:py-4 px-2 py-2 dark:bg-slate-900">
+      <nav class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-2 md:gap-3">
+          <a href="index.html">
+            <img
+              src="./images/tickerAI-logo 1.png"
+              alt="logo"
+              class="w-10 md:w-fit"
+            />
+          </a>
+          <p class="dark:text-white text-[8px] md:text-xs">
+            A Mark Cuban Company <br />
+            AI-based Financial Market News Aggregator
+          </p>
+        </div>
+        <div class="flex gap-1 md:gap-7 items-center">
+          <a href="index.html">
+            <button
+              class="bg-[#5677AC] text-white rounded-md md:py-3 py-1 md:px-6 px-3 text-xs md:text-base font-semibold hover:bg-[#42669e] transition hover:scale-105 hover:translate-y-1"
+            >
+              Personalize News
+            </button>
+          </a>
+          <div
+            class="bg-[#5677AC26] text-[#5677AC] font-bold size-9 rounded-full flex items-center justify-center transition-all hover:scale-105 cursor-pointer"
+          >
+            IK
+          </div>
+          <button id="switch">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 dark:stroke-white hover:scale-105 transition duration-300"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- from section -->
+
+    <section class="dark:bg-gray-800 bg-[#f0f0f0] md:px-0 px-4 min-h-screen">
+      <section class="container mx-auto py-8 md:py-12">
+        <div
+          class="flex items-center justify-between pb-1 md:pb-2.5 border-b md:border-b-[3px] md:mx-16 mx-2 border-[#333] dark:border-white"
+        >
+          <h3 class="dark:text-white font-semibold text-lg md:text-2xl text-[#333] uppercase">
+            Personolize your news
+          </h3>
+        </div>
+        <div
+          class="bg-white max-w-lg mx-auto p-8 mt-6 md:mt-10 shadow-lg rounded-lg"
+        >
+          <h3 class="text-center font-medium md:text-2xl text-lg">
+            Select your Markets
+          </h3>
+          <div class="py-5 space-y-4">
+            <p class="news-from">Stocks</p>
+            <p class="news-from">Crypto</p>
+            <p class="news-from">Economy & Business</p>
+            <p class="news-from">Commodities | Forex</p>
+            <p class="news-from">Fixed Income</p>
+          </div>
+          <button
+            class="bg-[#5677AC] w-full text-white py-2 md:text-lg font-medium transition-all hover:bg-[#33599e] hover:scale-105 rounded-lg"
+          >
+            Continue
+          </button>
+        </div>
+      </section>
+    </section>
+
+    <!-- Footer Serction -->
+
+    <section class= "dark:bg-slate-900 dark:text-white text-black text-center p-5 w-full">
+      All Rights Reserve By tickerAI-2024
+    </section>
+
+    <script>
+      const darkmood = document.getElementById("darkmood");
+      document.getElementById("switch").addEventListener("click", function () {
+        darkmood.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
